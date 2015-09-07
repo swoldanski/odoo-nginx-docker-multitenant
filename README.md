@@ -5,6 +5,7 @@ Prerequisite:
 - host with installed Docker like CoreOS or Ubuntu
 
 create config for nginx in /nginx/nginx.conf - working example is in repo
+
 next run:
 
 docker run -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo --name db postgres
