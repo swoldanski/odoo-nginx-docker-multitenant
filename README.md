@@ -14,11 +14,9 @@ docker run --name odoo --link db:db -t odoo -- --proxy-pass --db-filter=^%h$
 
 docker run --link odoo:odoo --name nginx -v /nginx/nginx.conf:/etc/nginx/nginx.conf:ro -d -p 80:80 nginx
 
-REMEMBER to change default Odoo master password from admin to something strong...
+REMEMBER to change default Odoo master password from admin to something strong... to do this just open in web browser your server address http://example.com - you will be redirected to database manager, go to password option and set new MASTER password
 
-just open in web browser your server address http://example.com - you will be redirected to database manager
-
-when you will create new database for tenant replace dots in hostname with dash:
+when you will create new database for tenant use your master password and replace dots in hostname with dash:
 
 example.com -> example-com
 
