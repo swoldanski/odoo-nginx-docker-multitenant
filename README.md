@@ -6,12 +6,15 @@ Prerequisite:
 - docker-compose min ver. 1.8
 
 Build:
+
 docker-compose up -d
 
 Stop:
+
 docker-compose stop
 
 Start:
+
 docker-compose start
 
 
