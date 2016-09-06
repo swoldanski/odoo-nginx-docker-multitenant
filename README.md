@@ -1,8 +1,22 @@
-# Odoo Nginx Docker multitenant setup
+# Odoo Docker multitenant setup
 Running Odoo container with Nginx proxy - multi tenant setup, fast and dirty - but works
 
 Prerequisite:
-- server with installed Docker like CoreOS or Ubuntu and 1GB RAM at least
+- server with installed Docker and 1GB RAM at least
+- docker-compose min ver. 1.8
+
+Build:
+docker-compose up -d
+
+Stop:
+docker-compose stop
+
+Start:
+docker-compose start
+
+
+
+### FIXME:
 
 create config for nginx in /nginx/nginx.conf - working example is in repo
 
